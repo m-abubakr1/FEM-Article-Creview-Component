@@ -86,7 +86,6 @@ body {
   display: grid;
   place-content: center;
   background: var(--light-grayish-blue);
-  padding: 20px;
 }
 
 /* Main Styling */
