@@ -71,7 +71,7 @@ button {
 }
 
 ion-icon,
-.article-title,
+.title,
 .author-name {
   cursor: pointer;
 }
@@ -90,7 +90,7 @@ body {
 
 /* Main Styling */
 
-.article-card {
+.card {
   display: grid;
   grid-template-columns: 285px minmax(300px, 445px);
   max-width: 730px;
@@ -104,7 +104,7 @@ body {
   overflow: hidden;
 }
 
-.article-banner {
+.img-banner {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -112,31 +112,31 @@ body {
   transition: all 0.5s ease;
 }
 
-.article-card:hover .article-banner {
+.card:hover .img-banner {
   transform: scale(1.1);
 }
 
-.article-content {
+.content {
   background: var(--white);
   padding: 32px 40px;
   border-radius: 0 10px 10px 0;
 }
 
-.article-title {
+.title {
   font-size: 20px;
   color: var(--very-dark-grayish-blue);
   margin-bottom: 12px;
   line-height: 1.4;
 }
 
-.article-text {
+.text {
   color: var(--desaturated-dark-blue);
   font-size: var(--fs-13);
   line-height: 1.5;
   margin-bottom: 18px;
 }
 
-.acticle-content-footer {
+.footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -235,7 +235,7 @@ body {
 }
 
 .share-option ion-icon:hover,
-.article-title:hover,
+.title:hover,
 .author-name:hover {
   filter: invert(1);
 }
@@ -245,14 +245,14 @@ body {
     --fs-13: 12px;
   }
 
-  .article-card {
+  .card {
     grid-template-columns: 1fr;
     max-width: 294px;
     overflow: hidden;
   }
 
   .img-box,
-  .article-content {
+  .content {
     border-radius: 0;
   }
 
@@ -260,19 +260,19 @@ body {
     height: 180px;
   }
 
-  .article-content {
+  .content {
     padding: 30px 28px 20px;
   }
 
-  .article-title {
+  .title {
     font-size: 15px;
   }
 
-  .article-text {
+  .text {
     margin-bottom: 30px;
   }
 
-  .acticle-content-footer {
+  .footer-content {
     position: relative;
   }
 
