@@ -1,24 +1,12 @@
 :root {
-  /**
-     * Colors 
-     */
-
   --very-dark-grayish-blue: hsl(217, 19%, 35%);
   --desaturated-dark-blue: hsl(214, 17%, 51%);
   --light-grayish-blue: hsl(210, 46%, 95%);
   --grayish-blue: hsl(212, 23%, 69%);
   --white: hsl(0, 0%, 100%);
 
-  /**
-     * Typography 
-     */
-
   --fs-13: 13px;
 }
-
-/*-----------------------------------*\
-   #RESET & DEFAULT
-  \*-----------------------------------*/
 
 *,
 *::before,
@@ -59,13 +47,7 @@ body {
   padding: 20px;
 }
 
-/*-----------------------------------*\
-   #MAIN STYLE
-  \*-----------------------------------*/
-
-/**
-   * article card 
-   */
+/* Main Styling */
 
 .article-card {
   display: grid;
@@ -161,10 +143,8 @@ body {
 }
 
 .share-option {
-  /**
-     * variable for transforming `.share-option` box 
-     * without repeating all transform value
-     */
+  /* variable for transforming `.share-option` box without repeating all transform value */
+
   --scale: 0;
   --translateX: -50%;
   --translateY: 0;
@@ -219,22 +199,10 @@ body {
   filter: invert(1);
 }
 
-/*-----------------------------------*\
-   #RESPONSIVE
-  \*-----------------------------------*/
-
 @media screen and (max-width: 768px) {
   :root {
-    /**
-       * Typography 
-       */
-
     --fs-13: 12px;
   }
-
-  /**
-     * article card responsive
-     */
 
   .article-card {
     grid-template-columns: 1fr;
@@ -282,10 +250,8 @@ body {
   }
 
   .share-option {
-    /**
-       * variable for transforming `.share-option` box 
-       * without repeating all transform value
-       */
+    /* variable for transforming `.share-option` box without repeating all transform value */
+
     --scale: 1;
     --translateX: 0;
     --translateY: 100%;
